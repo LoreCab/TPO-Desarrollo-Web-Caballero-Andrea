@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="Imagenes/Hamburguesa.ico">
+   <title>Restaurante - Desarrollo Web</title>
+
+   <!-- Enlaces a fuentes, librerias-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <!-- Link css  -->
+   <link rel="stylesheet" href="css/Estilos.css">
+
+</head>
+<body>
+
+<!--Seccion Formulario-->
+<form id="fs-frm" name="Sugerencias" accept-charset="utf-8" action="https://formspree.io/f/mjvllrwr" method="post">
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name"><font style="vertical-align: inherit;font-size: medium;"><font style="vertical-align: inherit;">Nombre completo</font></font></label>
+      <input type="text" name="name" id="full-name" placeholder="Ingrese su nombre completo" required="">
+      <label for="email-address"><font style="vertical-align: inherit;font-size: medium;"><font style="vertical-align: inherit;">Dirección de correo electrónico</font></font></label>
+      <input type="email" name="_replyto" id="email-address" placeholder="email@dominio.ar" required="">
+      <label for="message"><font style="vertical-align: inherit;font-size: medium;"><font style="vertical-align: inherit;">Mensaje</font></font></label>
+      <textarea rows="5" name="message" id="message" placeholder="Deje su comentario aqui por favor" required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+    </fieldset>
+    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="submit" value="Entregar"></font></font>
+  </form>
+  
+
+<!-- Seccion Footer  -->
+
+<section class="footer">
+
+   <div class="icons-container">
+
+      <div class="icons">
+         <i class="fas fa-clock"></i>
+         <h3>Horario de Atencion</h3>
+         <p>07:00am a 12:00pm</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+         <h3>Telefono</h3>
+         <p>3885191103</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-envelope"></i>
+         <h3>Email</h3>
+         <p>alorenacab@hotmail.com</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-map"></i>
+         <h3>Direccion</h3>
+         <p>Macedonio Graz 750 - 4600</p>
+      </div>
+
+   </div>
+
+   <div class="share">
+      <a href="https://www.facebook.com/andrea.caballero2" class="fab fa-facebook-f"></a>
+      <a href="https://www.instagram.com/lorecaballero86/" class="fab fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/andrea-lorena-caballero" class="fab fa-linkedin"></a>
+   </div>
+
+   <div class="credit"> Creado por <span>Andrea Lorena Caballero</span> | Todos los derechos reservados! </div>
+
+   <a href="index.html" class="logo"> <i class="fas fa-undo"></i> VOLVER </a>
+
+</section>
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+   lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
+
+
+</body>
+</html>

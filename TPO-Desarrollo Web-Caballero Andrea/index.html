@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="Imagenes/Hamburguesa.ico">
+   <title>Restaurante - Desarrollo Web</title>
+
+   <!-- Enlaces a fuentes, librerias-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <!-- Link css  -->
+   <link rel="stylesheet" href="css/Estilos.css">
+
+</head>
+<body>
+   
+<!-- Seccion Header    -->
+
+<section class="header">
+
+   <a href="#" class="logo"> <i class="fas fa-utensils"></i> Comida </a>
+
+   <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">Acerca de</a>
+      <a href="#food">Comida</a>
+      <a href="#gallery">Galeria</a>
+      <a href="#menu">Menu</a>
+      <a href="#order">Orden</a>
+      <a href="Sugerencias.html">Sugerencias</a>
+      
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- Seccion Home  -->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide" style="background: url(Imagenes/HomeSlide1.jpg) no-repeat;">
+            <div class="content">
+               <span>Comida Excepcional</span>
+               <h3>Deliciosos Platos</h3>
+               <a href="#" class="btn">Comenzar</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background: url(Imagenes/HomeSlide2.jpg) no-repeat;">
+            <div class="content">
+               <span>Comida Excepcional</span>
+               <h3>Momentos Mágicos</h3>
+               <a href="#" class="btn">Comenzar</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background: url(Imagenes/HomeSlide3.jpg) no-repeat;">
+            <div class="content">
+               <span>Comida Excepcional</span>
+               <h3>Cocina Autentica</h3>
+               <a href="#" class="btn">Comenzar</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+
+<!-- Seccion Acerca de -->
+
+<section class="about" id="about">
+
+   <div class="image">
+      <img src="Imagenes/About.png" alt="">
+   </div>
+
+   <div class="content">
+      <h3 class="title">Bienvenidos a nuestro Restaurante</h3>
+      <p>Nos dedicamos a satisfacer las necesidades gastronómicas de nuestros clientes, preparando y ofreciendo alimentos y servicios de la calidad más alta y una atención personalizada que asegure su satisfacción</p>
+      <a href="#" class="btn">Leer mas...</a>
+      <div class="icons-container">
+         <div class="icons">
+            <img src="Imagenes/about-icon-1.png" alt="">
+            <h3>Comida de Calidad</h3>
+         </div>
+         <div class="icons">
+            <img src="Imagenes/about-icon-2.png" alt="">
+            <h3>Comida y Bebida</h3>
+         </div>
+         <div class="icons">
+            <img src="Imagenes/about-icon-3.png" alt="">
+            <h3>Chefs con gran experiencia</h3>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+
+<!-- Seccion Comida -->
+
+<section class="food" id="food">
+
+   <div class="heading">  
+      <span>Platos Populares</span>
+      <h3>Nuestra deliciosa comida</h3>
+   </div>
+
+   <div class="swiper food-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide" data-name="food-1">
+            <img src="Imagenes/Comida1.png" alt="">
+            <h3>Riquisimos platos</h3>
+            <div class="Precio">$1000</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-2">
+            <img src="Imagenes/Comida2.png" alt="">
+            <h3>Riquisimos platos</h3>
+            <div class="Precio">$1000</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-3">
+            <img src="Imagenes/Comida3.png" alt="">
+            <h3>Riquisimos platos</h3>
+            <div class="Precio">$1000</div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+
+<!-- Seccion vista previa de comida-->
+
+<section class="food-preview-container">
+
+   <div id="close-preview" class="fas fa-times"></div>
+
+   <div class="food-preview" data-target="food-1">
+      <img src="Imagenes/Comida1.png" alt="">
+      <h3>Platos deliciosos</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iure consectetur voluptatum aliquam impedit! Maiores fuga enim cumque nulla beatae odit, accusantium nostrum labore alias ad repellendus ea rem reiciendis!</p>
+      <div class="Precio">$1000</div>
+      <a href="#" class="btn">Pedir Ahora</a>
+   </div>
+
+   <div class="food-preview" data-target="food-2">
+      <img src="Imagenes/Comida2.png" alt="">
+      <h3>Platos deliciosos</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos sunt libero nam corrupti, fugit natus ab voluptatem asperiores voluptates ea, similique facere minus voluptatibus! Magnam, veniam ullam. Autem, odit quaerat.</p>
+      <div class="Precio">$1000</div>
+      <a href="#" class="btn">Pedir Ahora</a>
+   </div>
+
+   <div class="food-preview" data-target="food-3">
+      <img src="Imagenes/Comida3.png" alt="">
+      <h3>Platos deliciosos</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ex expedita optio. Velit repellendus recusandae, ducimus at quo tenetur temporibus odio officiis molestias ut dolorum culpa officia saepe dolore neque.</p>
+      <div class="Precio">$1000</div>
+      <a href="#" class="btn">Pedir Ahora</a>
+   </div>
+
+</section>
+
+<!-- Seccion Galeria  -->
+
+<section class="gallery" id="gallery">
+
+   <div class="heading">
+      <span>Nuestra Galeria</span>
+   </div>
+
+   <div class="gallery-container">
+
+      <a href="Imagenes/Galeria1.jpg" class="box">
+         <img src="Imagenes/Galeria1.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="Imagenes/Galeria2.jpg" class="box">
+         <img src="Imagenes/Galeria2.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="Imagenes/Galeria3.jpg" class="box">
+         <img src="Imagenes/Galeria3.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="Imagenes/Galeria4.jpg" class="box">
+         <img src="Imagenes/Galeria4.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="Imagenes/Galeria5.jpg" class="box">
+         <img src="Imagenes/Galeria5.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="Imagenes/Galeria6.jpg" class="box">
+         <img src="Imagenes/Galeria6.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+   </div>
+
+</section>
+
+<!-- Seccion Menu  -->
+
+<section class="menu" id="menu">
+
+   <div class="heading">
+      <span>MENU</span>
+      <h3>Nuestros platos populares</h3>
+   </div>
+
+   <div class="swiper menu-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <h3 class="title">Desayuno</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Desayuno Ejecutivo</h3>
+                     <p>Café Americano, Jugo Natural de Naranja, Fruta Picada, Yogurt Natural o de frutilla, Miel, Granola, Queso, Pan tostado,Huevos con Jamón</p>
+                  </div>
+                  <div class="Precio">$800</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Desayuno Americano</h3>
+                     <p>Incluye café, te o leche, jugos de frutas, huevos, pan o tostadas, mermelada o mantequilla</p>
+                  </div>
+                  <div class="Precio">$1200</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Desayuno Continental</h3>
+                     <p>Incluye café, te o leche, jugo o frutas, pan o tostadas, mermelada o mantequilla.</p>
+                  </div>
+                  <div class="Precio">$800</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">Almuerzo</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Platos Especiales</h3>
+                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui fuga quas velit laborum voluptate veritatis illum unde, quos saepe nisi dolorem eius debitis iure hic consectetur quis dolores non suscipit?</p>
+                  </div>
+                  <div class="Precio">$1000</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Platos Tradicionales</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit labore alias libero id, ipsum vero a praesentium! Itaque maiores totam dolor id, illo dolorem accusamus placeat odio magni in enim!</p>
+                  </div>
+                  <div class="Precio">$1500</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Comidas rapidas</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis error vitae repudiandae fugiat at eius alias natus laborum illum repellat corporis doloribus? Quia ab aperiam eius quas beatae ratione..</p>
+                  </div>
+                  <div class="Precio">$800</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">Cena</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>dPlatos Especiales</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempore officia ipsum in inventore nihil. Ipsam inventore nemo autem enim odio cupiditate perspiciatis qui, aspernatur rem optio impedit ab laudantium!.</p>
+                  </div>
+                  <div class="Precio">$1000</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Platos Tradicionales</h3>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nisi reiciendis iusto necessitatibus? Odit obcaecati quo cum aliquam nam eveniet sit voluptates accusamus, earum delectus blanditiis, sequi veniam. Laboriosam, ducimus?</p>
+                  </div>
+                  <div class="Precio">$1500</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Comidas rapidas</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nobis. Hic, laudantium fugiat at dolores unde voluptatem repellendus veniam maxime consequatur placeat, odio, sapiente eaque? Asperiores voluptate impedit architecto ad?.</p>
+                  </div>
+                  <div class="Precio">$800</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">Bebidas</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Bebidas frias</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quae. Reiciendis nesciunt inventore corrupti at facilis maxime distinctio veritatis, sint beatae eveniet autem atque, rerum nobis dolorem natus ea dignissimos!</p>
+                  </div>
+                  <div class="Precio">$500</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Bebidas Calientes</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto itaque quisquam accusantium reiciendis debitis corrupti neque. Ratione eum explicabo natus voluptatem tempora aliquam quidem, quisquam sequi vel voluptatibus beatae dolorem!</p>
+                  </div>
+                  <div class="Precio">$500</div>
+               </div>
+               
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">Postres</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Tortas</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi iure dolor magni perspiciatis sapiente nesciunt, eveniet incidunt facere amet dolores ut nostrum quibusdam odit aperiam odio saepe sit id necessitatibus!</p>
+                  </div>
+                  <div class="Precio">$800</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Budines</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tenetur minima quidem libero consequuntur quos itaque praesentium nihil non provident dolores, doloribus repellendus cupiditate, eius quis harum, voluptate veritatis fuga!</p>
+                  </div>
+                  <div class="Precio">$800</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Helado</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, optio minima. Perspiciatis quos deserunt necessitatibus ad officiis, aliquid id perferendis quisquam nam, in neque quibusdam praesentium nihil et inventore blanditiis.</p>
+                  </div>
+                  <div class="Precio">$800</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Postres Frutales</h3>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim delectus reprehenderit rerum praesentium repellendus. Accusantium animi distinctio iste impedit recusandae excepturi, modi, provident soluta quo, dicta debitis? Maxime, nihil modi.</p>
+                  </div>
+                  <div class="Precio">$800</div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- Seccion Orden  -->
+
+<section class="order" id="order">
+
+   <div class="heading">
+      <span>Ordena ahora</span>
+      <h3>Entrega rapida a domicilio</h3>
+   </div>
+
+   <form action="">
+      <div class="box-container">
+         <div class="box">
+            <div class="inputBox">
+               <span>Nombre Completo</span>
+               <input type="text" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="inputBox">
+               <span>Nombre de la comida</span>
+               <input type="text" placeholder="Comida que deseas">
+            </div>
+            <div class="inputBox">
+               <span>Detalles de la orden</span>
+               <input type="text" placeholder="Especificaciones de tu pedido">
+            </div>
+            <div class="inputBox">
+               <span>Tu direccion</span>
+               <textarea name="" placeholder="Ingresa tu direccion" id="" cols="30" rows="10"></textarea>
+            </div>
+         </div>
+         <div class="box">
+            <div class="inputBox">
+               <span>Numero</span>
+               <input type="number" placeholder="Ingresa el numero">
+            </div>
+            
+            <div class="inputBox">
+               <span>Tu direccion</span>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.6405602872!2d-65.31956118517587!3d-24.184335484377232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f16248173f9%3A0x351304e5d3d4896!2sMacedonio%20Graz%20750%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses!2sar!4v1653528222097!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+            </div>
+         </div>
+      </div>
+      <input type="submit" value="Pedir Ahora" class="btn">
+   </form>
+   
+</section>
+
+<!-- Seccion Footer  -->
+
+<section class="footer">
+
+   <div class="icons-container">
+
+      <div class="icons">
+         <i class="fas fa-clock"></i>
+         <h3>Horario de Atencion</h3>
+         <p>07:00am a 12:00pm</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+         <h3>Telefono</h3>
+         <p>3885191103</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-envelope"></i>
+         <h3>Email</h3>
+         <p>alorenacab@hotmail.com</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-map"></i>
+         <h3>Direccion</h3>
+         <p>Macedonio Graz 750 - 4600</p>
+      </div>
+
+   </div>
+
+   <div class="share">
+      <a href="https://www.facebook.com/andrea.caballero2" class="fab fa-facebook-f"></a>
+      <a href="https://www.instagram.com/lorecaballero86/" class="fab fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/andrea-lorena-caballero" class="fab fa-linkedin"></a>
+   </div>
+
+   <div class="credit"> Creado por <span>Andrea Lorena Caballero</span> | Todos los derechos reservados! </div>
+
+</section>
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+   lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
+
+</body>
+</html>
